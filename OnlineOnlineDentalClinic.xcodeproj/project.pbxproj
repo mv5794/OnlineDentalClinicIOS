@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F00C6D22379C41300F6FD2C /* ReservationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00C6D12379C41300F6FD2C /* ReservationsListView.swift */; };
+		1FC3643C2376892400C53695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3643B2376892400C53695 /* AppDelegate.swift */; };
+		1FC3643E2376892400C53695 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3643D2376892400C53695 /* SceneDelegate.swift */; };
+		1FC364402376892400C53695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3643F2376892400C53695 /* ContentView.swift */; };
+		1FC364422376892500C53695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC364412376892500C53695 /* Assets.xcassets */; };
+		1FC364452376892500C53695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC364442376892500C53695 /* Preview Assets.xcassets */; };
+		1FC364482376892500C53695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC364462376892500C53695 /* LaunchScreen.storyboard */; };
+		1FC364532376892500C53695 /* OnlineOnlineDentalClinicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC364522376892500C53695 /* OnlineOnlineDentalClinicTests.swift */; };
+		1FC3645E2376892500C53695 /* OnlineOnlineDentalClinicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3645D2376892500C53695 /* OnlineOnlineDentalClinicUITests.swift */; };
+		1FC3646D23768B4100C53695 /* ReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3646C23768B4100C53695 /* ReservationViewModel.swift */; };
+		1FC3646F23768D8F00C53695 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3646E23768D8F00C53695 /* PersonViewModel.swift */; };
+		1FC3647223768F5F00C53695 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3647123768F5F00C53695 /* Role.swift */; };
+		1FC364742376978A00C53695 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC364732376978A00C53695 /* Person.swift */; };
+		1FC3647623769E8200C53695 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3647523769E8200C53695 /* Reservation.swift */; };
+		1FC364782376A37500C53695 /* ReservationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC364772376A37500C53695 /* ReservationListViewModel.swift */; };
+		1FEFA3572376E6B900E6BF4B /* OnlineDentalClinicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FC3644F2376892500C53695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FC364302376892400C53695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC364372376892400C53695;
+			remoteInfo = OnlineOnlineDentalClinic;
+		};
+		1FC3645A2376892500C53695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FC364302376892400C53695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC364372376892400C53695;
+			remoteInfo = OnlineOnlineDentalClinic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F00C6D12379C41300F6FD2C /* ReservationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsListView.swift; sourceTree = "<group>"; };
+		1FC364382376892400C53695 /* OnlineOnlineDentalClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineOnlineDentalClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC3643B2376892400C53695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FC3643D2376892400C53695 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1FC3643F2376892400C53695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1FC364412376892500C53695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FC364442376892500C53695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1FC364472376892500C53695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FC364492376892500C53695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC3644E2376892500C53695 /* OnlineOnlineDentalClinicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineOnlineDentalClinicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC364522376892500C53695 /* OnlineOnlineDentalClinicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineOnlineDentalClinicTests.swift; sourceTree = "<group>"; };
+		1FC364542376892500C53695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC364592376892500C53695 /* OnlineOnlineDentalClinicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineOnlineDentalClinicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC3645D2376892500C53695 /* OnlineOnlineDentalClinicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineOnlineDentalClinicUITests.swift; sourceTree = "<group>"; };
+		1FC3645F2376892500C53695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC3646C23768B4100C53695 /* ReservationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewModel.swift; sourceTree = "<group>"; };
+		1FC3646E23768D8F00C53695 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		1FC3647123768F5F00C53695 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		1FC364732376978A00C53695 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1FC3647523769E8200C53695 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		1FC364772376A37500C53695 /* ReservationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListViewModel.swift; sourceTree = "<group>"; };
+		1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineDentalClinicService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FC364352376892400C53695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC3644B2376892500C53695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC364562376892500C53695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F00C6D02379C3E600F6FD2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F00C6D12379C41300F6FD2C /* ReservationsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1FC3642F2376892400C53695 = {
+			isa = PBXGroup;
+			children = (
+				1FC3643A2376892400C53695 /* OnlineOnlineDentalClinic */,
+				1FC364512376892500C53695 /* OnlineOnlineDentalClinicTests */,
+				1FC3645C2376892500C53695 /* OnlineOnlineDentalClinicUITests */,
+				1FC364392376892400C53695 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FC364392376892400C53695 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FC364382376892400C53695 /* OnlineOnlineDentalClinic.app */,
+				1FC3644E2376892500C53695 /* OnlineOnlineDentalClinicTests.xctest */,
+				1FC364592376892500C53695 /* OnlineOnlineDentalClinicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC3643A2376892400C53695 /* OnlineOnlineDentalClinic */ = {
+			isa = PBXGroup;
+			children = (
+				1F00C6D02379C3E600F6FD2C /* Views */,
+				1FEFA3552376E68A00E6BF4B /* Services */,
+				1FC3647023768F3900C53695 /* Models */,
+				1FC3646B23768B0D00C53695 /* ViewModels */,
+				1FC3643B2376892400C53695 /* AppDelegate.swift */,
+				1FC3643D2376892400C53695 /* SceneDelegate.swift */,
+				1FC3643F2376892400C53695 /* ContentView.swift */,
+				1FC364412376892500C53695 /* Assets.xcassets */,
+				1FC364462376892500C53695 /* LaunchScreen.storyboard */,
+				1FC364492376892500C53695 /* Info.plist */,
+				1FC364432376892500C53695 /* Preview Content */,
+			);
+			path = OnlineOnlineDentalClinic;
+			sourceTree = "<group>";
+		};
+		1FC364432376892500C53695 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1FC364442376892500C53695 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FC364512376892500C53695 /* OnlineOnlineDentalClinicTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FC364522376892500C53695 /* OnlineOnlineDentalClinicTests.swift */,
+				1FC364542376892500C53695 /* Info.plist */,
+			);
+			path = OnlineOnlineDentalClinicTests;
+			sourceTree = "<group>";
+		};
+		1FC3645C2376892500C53695 /* OnlineOnlineDentalClinicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3645D2376892500C53695 /* OnlineOnlineDentalClinicUITests.swift */,
+				1FC3645F2376892500C53695 /* Info.plist */,
+			);
+			path = OnlineOnlineDentalClinicUITests;
+			sourceTree = "<group>";
+		};
+		1FC3646B23768B0D00C53695 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3646C23768B4100C53695 /* ReservationViewModel.swift */,
+				1FC3646E23768D8F00C53695 /* PersonViewModel.swift */,
+				1FC364772376A37500C53695 /* ReservationListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1FC3647023768F3900C53695 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3647123768F5F00C53695 /* Role.swift */,
+				1FC364732376978A00C53695 /* Person.swift */,
+				1FC3647523769E8200C53695 /* Reservation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FEFA3552376E68A00E6BF4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FC364372376892400C53695 /* OnlineOnlineDentalClinic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC364622376892500C53695 /* Build configuration list for PBXNativeTarget "OnlineOnlineDentalClinic" */;
+			buildPhases = (
+				1FC364342376892400C53695 /* Sources */,
+				1FC364352376892400C53695 /* Frameworks */,
+				1FC364362376892400C53695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlineOnlineDentalClinic;
+			productName = OnlineOnlineDentalClinic;
+			productReference = 1FC364382376892400C53695 /* OnlineOnlineDentalClinic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FC3644D2376892500C53695 /* OnlineOnlineDentalClinicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC364652376892500C53695 /* Build configuration list for PBXNativeTarget "OnlineOnlineDentalClinicTests" */;
+			buildPhases = (
+				1FC3644A2376892500C53695 /* Sources */,
+				1FC3644B2376892500C53695 /* Frameworks */,
+				1FC3644C2376892500C53695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FC364502376892500C53695 /* PBXTargetDependency */,
+			);
+			name = OnlineOnlineDentalClinicTests;
+			productName = OnlineOnlineDentalClinicTests;
+			productReference = 1FC3644E2376892500C53695 /* OnlineOnlineDentalClinicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FC364582376892500C53695 /* OnlineOnlineDentalClinicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC364682376892500C53695 /* Build configuration list for PBXNativeTarget "OnlineOnlineDentalClinicUITests" */;
+			buildPhases = (
+				1FC364552376892500C53695 /* Sources */,
+				1FC364562376892500C53695 /* Frameworks */,
+				1FC364572376892500C53695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FC3645B2376892500C53695 /* PBXTargetDependency */,
+			);
+			name = OnlineOnlineDentalClinicUITests;
+			productName = OnlineOnlineDentalClinicUITests;
+			productReference = 1FC364592376892500C53695 /* OnlineOnlineDentalClinicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FC364302376892400C53695 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = HealthApps;
+				TargetAttributes = {
+					1FC364372376892400C53695 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					1FC3644D2376892500C53695 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 1FC364372376892400C53695;
+					};
+					1FC364582376892500C53695 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 1FC364372376892400C53695;
+					};
+				};
+			};
+			buildConfigurationList = 1FC364332376892400C53695 /* Build configuration list for PBXProject "OnlineOnlineDentalClinic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FC3642F2376892400C53695;
+			productRefGroup = 1FC364392376892400C53695 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FC364372376892400C53695 /* OnlineOnlineDentalClinic */,
+				1FC3644D2376892500C53695 /* OnlineOnlineDentalClinicTests */,
+				1FC364582376892500C53695 /* OnlineOnlineDentalClinicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FC364362376892400C53695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC364482376892500C53695 /* LaunchScreen.storyboard in Resources */,
+				1FC364452376892500C53695 /* Preview Assets.xcassets in Resources */,
+				1FC364422376892500C53695 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC3644C2376892500C53695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC364572376892500C53695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FC364342376892400C53695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC3646F23768D8F00C53695 /* PersonViewModel.swift in Sources */,
+				1FC3643C2376892400C53695 /* AppDelegate.swift in Sources */,
+				1FC3643E2376892400C53695 /* SceneDelegate.swift in Sources */,
+				1FC3646D23768B4100C53695 /* ReservationViewModel.swift in Sources */,
+				1FC364742376978A00C53695 /* Person.swift in Sources */,
+				1FC364782376A37500C53695 /* ReservationListViewModel.swift in Sources */,
+				1FC364402376892400C53695 /* ContentView.swift in Sources */,
+				1FEFA3572376E6B900E6BF4B /* OnlineDentalClinicService.swift in Sources */,
+				1FC3647623769E8200C53695 /* Reservation.swift in Sources */,
+				1FC3647223768F5F00C53695 /* Role.swift in Sources */,
+				1F00C6D22379C41300F6FD2C /* ReservationsListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC3644A2376892500C53695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC364532376892500C53695 /* OnlineOnlineDentalClinicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC364552376892500C53695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC3645E2376892500C53695 /* OnlineOnlineDentalClinicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FC364502376892500C53695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FC364372376892400C53695 /* OnlineOnlineDentalClinic */;
+			targetProxy = 1FC3644F2376892500C53695 /* PBXContainerItemProxy */;
+		};
+		1FC3645B2376892500C53695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FC364372376892400C53695 /* OnlineOnlineDentalClinic */;
+			targetProxy = 1FC3645A2376892500C53695 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FC364462376892500C53695 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FC364472376892500C53695 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FC364602376892500C53695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FC364612376892500C53695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FC364632376892500C53695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OnlineOnlineDentalClinic/Preview Content\"";
+				DEVELOPMENT_TEAM = D6YAY7P6G2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OnlineOnlineDentalClinic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = healthapps.OnlineOnlineDentalClinic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FC364642376892500C53695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OnlineOnlineDentalClinic/Preview Content\"";
+				DEVELOPMENT_TEAM = D6YAY7P6G2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OnlineOnlineDentalClinic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = healthapps.OnlineOnlineDentalClinic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1FC364662376892500C53695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6YAY7P6G2;
+				INFOPLIST_FILE = OnlineOnlineDentalClinicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = healthapps.OnlineOnlineDentalClinicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineOnlineDentalClinic.app/OnlineOnlineDentalClinic";
+			};
+			name = Debug;
+		};
+		1FC364672376892500C53695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6YAY7P6G2;
+				INFOPLIST_FILE = OnlineOnlineDentalClinicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = healthapps.OnlineOnlineDentalClinicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineOnlineDentalClinic.app/OnlineOnlineDentalClinic";
+			};
+			name = Release;
+		};
+		1FC364692376892500C53695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6YAY7P6G2;
+				INFOPLIST_FILE = OnlineOnlineDentalClinicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = healthapps.OnlineOnlineDentalClinicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnlineOnlineDentalClinic;
+			};
+			name = Debug;
+		};
+		1FC3646A2376892500C53695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6YAY7P6G2;
+				INFOPLIST_FILE = OnlineOnlineDentalClinicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = healthapps.OnlineOnlineDentalClinicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnlineOnlineDentalClinic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FC364332376892400C53695 /* Build configuration list for PBXProject "OnlineOnlineDentalClinic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC364602376892500C53695 /* Debug */,
+				1FC364612376892500C53695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC364622376892500C53695 /* Build configuration list for PBXNativeTarget "OnlineOnlineDentalClinic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC364632376892500C53695 /* Debug */,
+				1FC364642376892500C53695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC364652376892500C53695 /* Build configuration list for PBXNativeTarget "OnlineOnlineDentalClinicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC364662376892500C53695 /* Debug */,
+				1FC364672376892500C53695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC364682376892500C53695 /* Build configuration list for PBXNativeTarget "OnlineOnlineDentalClinicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC364692376892500C53695 /* Debug */,
+				1FC3646A2376892500C53695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FC364302376892400C53695 /* Project object */;
+}
