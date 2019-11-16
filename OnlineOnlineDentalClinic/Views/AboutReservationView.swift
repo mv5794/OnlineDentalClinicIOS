@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct AboutReservationView: View {
+    @EnvironmentObject var reservationListViewModel : ReservationListViewModel
     
     var reservation : ReservationViewModel
     
@@ -31,27 +32,17 @@ struct AboutReservationView: View {
                 }
                 
                 Spacer()
-                Button(action: {}) {
+                
+                Button(action: {self.reservationListViewModel.reservations.remove(at: self.reservation.id)}) {
                     Text("Cancelar Cita")
                 }
                 .scaledToFill()
                 .frame(minWidth: 100, idealWidth: 200, maxWidth: 350)
-                .background(Color.white)
-                .foregroundColor(Color.blue)
-                .cornerRadius(10)
-                .border(Color.blue, width: 2)
                 .padding()
-                
-                Button(action: {}) {
-                    Text("Cita Atendida")
-                }
-                .scaledToFill()
-                .frame(minWidth: 100, idealWidth: 200, maxWidth: 350)
-                .background(Color.white)
-                .foregroundColor(Color.blue)
+                .background(Color.blue)
+                .foregroundColor(Color.white)
                 .cornerRadius(10)
-                .border(Color.blue, width: 2)
-                .padding()
+            
 
             }
             

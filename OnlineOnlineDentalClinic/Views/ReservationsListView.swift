@@ -18,16 +18,26 @@ struct ReservationRow: View {
 
 struct ReservationsListView: View {
     
-    @ObservedObject private var reservationListViewModel = ReservationListViewModel()
+      @EnvironmentObject var reservationListViewModel : ReservationListViewModel
     
     var body: some View {
-        List(self.reservationListViewModel.reservations) { reservation in
-            NavigationLink(destination: AboutReservationView(reservation: reservation).environmentObject(self.reservationListViewModel)) {
-                ReservationRow(reservation: reservation)
+        VStack{
+            NavigationLink(destination: RegisterReservationView()) { Text("Reservar Cita") }
+            .scaledToFill()
+            .frame(minWidth: 100, idealWidth: 300, maxWidth: 350)
+            .border(Color.blue, width: 2)
+
+            List(self.reservationListViewModel.reservations) { reservation in
+                NavigationLink(destination: AboutReservationView(reservation: reservation)) {
+                    ReservationRow(reservation: reservation)
+                }
             }
+            .navigationBarTitle(Text("Reservations"), displayMode: .automatic)
         }
-        .navigationBarTitle(Text("Reservations"), displayMode: .automatic)
+        
+        
     }
+    
 
 }
 

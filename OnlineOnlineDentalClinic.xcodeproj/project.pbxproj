@@ -133,6 +133,7 @@
 				1F00C6D02379C3E600F6FD2C /* Views */,
 				1FEFA3552376E68A00E6BF4B /* Services */,
 				1FC3647023768F3900C53695 /* Models */,
+				1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicService.swift */,
 				1FC3646B23768B0D00C53695 /* ViewModels */,
 				1FC3643B2376892400C53695 /* AppDelegate.swift */,
 				1FC3643D2376892400C53695 /* SceneDelegate.swift */,
@@ -193,7 +194,6 @@
 		1FEFA3552376E68A00E6BF4B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
