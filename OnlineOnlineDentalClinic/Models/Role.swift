@@ -9,13 +9,12 @@
 import Foundation
 
 struct Role: Codable {
-    var id: int_fast32_t
+    var id: Int
     var name: String
     var description: String
     
     init() {
         id = 0
-        name = "Unnamed"
         name = "Unnamed"
         description = "Unknown"
     }

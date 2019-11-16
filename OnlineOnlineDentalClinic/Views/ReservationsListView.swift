@@ -8,10 +8,27 @@
 
 import SwiftUI
 
-struct ReservationsListView: View {
+struct ReservationRow: View {
+    var reservation: ReservationViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(reservation.estauts)
     }
+}
+
+struct ReservationsListView: View {
+    
+    @ObservedObject private var reservationListViewModel = ReservationListViewModel()
+    
+    var body: some View {
+        List(self.reservationListViewModel.reservations) { reservation in
+            NavigationLink(destination: AboutReservationView(reservation: reservation).environmentObject(self.reservationListViewModel)) {
+                ReservationRow(reservation: reservation)
+            }
+        }
+        .navigationBarTitle(Text("Reservations"), displayMode: .automatic)
+    }
+
 }
 
 struct ReservationsListView_Previews: PreviewProvider {

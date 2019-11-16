@@ -9,12 +9,13 @@
 import Foundation
 
 struct Reservation: Codable {
-    var id: int_fast32_t
+    var id: Int
     var reservation_date: Date
     var estatus: String
+    var idDentalPiece : Int
     var dentist : Person
     var pacient: Person
-    var idTreatment: int_fast32_t
+    var idTreatment: Int
     var observation: String
 
 
@@ -22,6 +23,7 @@ init() {
     id = 0
     reservation_date = Date()
     estatus = "Unnamed"
+    idDentalPiece = 0
     dentist = Person()
     pacient = Person()
     idTreatment = 0

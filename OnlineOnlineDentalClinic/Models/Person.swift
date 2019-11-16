@@ -9,7 +9,7 @@
 import Foundation
 
 struct Person: Codable {
-    var id: int_fast32_t
+    var id: Int
     var name: String
     var lastname: String
     var dni : String
@@ -22,13 +22,13 @@ struct Person: Codable {
 
 init() {
     id = 0
-    name = "Unnamed"
-    lastname = "Unnamed"
-    dni = ""
-    phone = ""
-    mail = ""
+    name = "Pepito"
+    lastname = "Perez"
+    dni = "00000000"
+    phone = "999999999"
+    mail = "a@abc"
     picture = ""
-    gender = ""
+    gender = "male"
     role  = Role()
-    address = ""
+    address = "aa 123 ab"
     }}

@@ -11,11 +11,11 @@ import Foundation
 struct ReservationViewModel: Identifiable {
     var reservation: Reservation
     
-    var id : int_fast32_t {
+    var id : Int {
         return self.reservation.id
     }
     
-    var reservation_name: Date {
+    var reservation_date: Date {
         return self.reservation.reservation_date
     }
     
@@ -31,7 +31,7 @@ struct ReservationViewModel: Identifiable {
         return self.reservation.pacient
     }
     
-    var idTreatment: int_fast32_t {
+    var idTreatment: Int {
         return self.reservation.idTreatment
     }
     

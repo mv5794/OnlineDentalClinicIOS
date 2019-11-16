@@ -12,11 +12,9 @@ class ReservationListViewModel: ObservableObject {
     @Published var reservations = [ReservationViewModel]()
     
     init() {
-        OnlineDentalClinicService().getReservations { reservations in
-            if let reservations = reservations {
-                self.reservations = reservations.map(ReservationViewModel.init)
-            }
-        }
+        self.reservations = [ReservationViewModel(reservation: Reservation()),
+                                 ReservationViewModel(reservation: Reservation()),
+                                 ReservationViewModel(reservation: Reservation())]
     }
     
 }
