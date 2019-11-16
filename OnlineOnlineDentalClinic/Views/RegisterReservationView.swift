@@ -13,11 +13,13 @@ struct RegisterReservationView: View {
     var reservation = Reservation()
     var paciente = Person()
     var dentista = Person()
+    @State var fechaReserva = Date()
+    @State var nombreDentista = String()
     var body: some View {
         VStack{
     
-                DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("Fecha") })
-            Picker(selection: /*@START_MENU_TOKEN@*/.constant(1)/*@END_MENU_TOKEN@*/, label: Text("Dentista")) {
+            DatePicker(selection: $fechaReserva , label: { /*@START_MENU_TOKEN@*/Text("Date")/*@END_MENU_TOKEN@*/})
+            Picker(selection: $nombreDentista, label: Text("Dentista")) {
                 Text("Geronimo Chavez").tag(1)
                 Text("Julie Diaz").tag(2)
             }

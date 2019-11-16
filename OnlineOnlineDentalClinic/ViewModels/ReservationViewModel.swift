@@ -11,7 +11,7 @@ import Foundation
 struct ReservationViewModel: Identifiable {
     var reservation: Reservation
     
-    var id : Int{
+    var id : Int {
         return self.reservation.id
     }
     
