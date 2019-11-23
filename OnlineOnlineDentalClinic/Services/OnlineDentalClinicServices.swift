@@ -13,17 +13,21 @@ class OnlineDentalClinicService {
     private let reservationsRelativeEndPointString = "/reservations"
     private let personsRelativeEndPointString = "/persons"
     private let rolesRelativeEndPointString = "/roles"
+    private let usersRelativeEndPointString = "/users"
     
     private func reservationsEndPointString() -> String {
         return "\(baseUrlString)\(reservationsRelativeEndPointString)"
     }
     
     private func personsEndPointString() -> String {
-        return "\(baseUrlString)\(personsRelativeEndPointString)"
+        return "https://onlinedentalclinic.azurewebsites.net/persons"
     }
     
     private func rolesEndPointString() -> String {
         return "\(baseUrlString)\(rolesRelativeEndPointString)"
+    }
+    private func usersEndPointString() -> String {
+        return "\(baseUrlString)\(usersRelativeEndPointString)"
     }
     
     

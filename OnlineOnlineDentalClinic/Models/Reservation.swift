@@ -10,22 +10,22 @@ import Foundation
 
 struct Reservation: Codable {
     var id: Int
-    var reservation_date: Date
+    var reservation_date: String
     var estatus: String
-    var idDentalPiece : Int
-    var dentist : Person
-    var pacient: Person
+    var idDentalPiece: Int
+    var idDentist: Int
+    var idPacient: Int
     var idTreatment: Int
     var observation: String
 
 
 init() {
     id = 0
-    reservation_date = Date()
+    reservation_date = ""
     estatus = "Unnamed"
     idDentalPiece = 0
-    dentist = Person()
-    pacient = Person()
+    idDentist = 0
+    idPacient = 0
     idTreatment = 0
     observation = ""
     }}

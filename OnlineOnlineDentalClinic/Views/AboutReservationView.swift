@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct AboutReservationView: View {
-    @EnvironmentObject var reservationListViewModel : ReservationListViewModel
+    @EnvironmentObject var userConfig : UserConfig
+    @Environment(\.presentationMode) var presentationMode
     
     var reservation : ReservationViewModel
     
@@ -24,16 +25,19 @@ struct AboutReservationView: View {
                 Spacer()
                 HStack(alignment: .top) {
                     Text("Dentista: ").bold()
-                    Text("\(reservation.dentist.name)"+" "+"\(reservation.dentist.lastname)")
+                    Text("\(reservation.dentist)")
+                    //Text("\(reservation.dentist.name)"+" "+"\(reservation.dentist.lastname)")
                 }
                 HStack(alignment: .top) {
                     Text("Direccion: ").bold()	
-                    Text("\(reservation.dentist.address)")
+                    //Text("\(reservation.dentist.address)")
                 }
                 
                 Spacer()
                 
-                Button(action: {self.reservationListViewModel.reservations.remove(at: self.reservation.id)}) {
+                Button(action: {
+                    self.onClick()
+                }) {
                     Text("Cancelar Cita")
                 }
                 .scaledToFill()
@@ -49,6 +53,13 @@ struct AboutReservationView: View {
                 
             .navigationBarTitle("About cita")
         }
+        
+    }
+    func onClick() {
+        if let found = userConfig.reservationListViewModel.reservations.firstIndex(where: {$0.id == self.reservation.id}) { userConfig.reservationListViewModel.reservations.remove(at: found)
+        }
+                        print(userConfig.reservationListViewModel.reservations)
+        self.presentationMode.wrappedValue.dismiss()
     }
 }
 

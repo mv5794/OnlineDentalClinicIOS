@@ -15,7 +15,7 @@ struct ReservationViewModel: Identifiable {
         return self.reservation.id
     }
     
-    var reservation_date: Date {
+    var reservation_date: String {
         return self.reservation.reservation_date
     }
     
@@ -23,12 +23,12 @@ struct ReservationViewModel: Identifiable {
         return self.reservation.estatus
     }
     
-    var dentist: Person {
-        return self.reservation.dentist
+    var dentist: Int {
+        return self.reservation.idDentist
     }
     
-    var pacient: Person {
-        return self.reservation.pacient
+    var pacient: Int {
+        return self.reservation.idPacient
     }
     
     var idTreatment: Int {

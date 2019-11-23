@@ -10,6 +10,12 @@
 		1F00C6D22379C41300F6FD2C /* ReservationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00C6D12379C41300F6FD2C /* ReservationsListView.swift */; };
 		1F00C6D42379DEA100F6FD2C /* AboutReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00C6D32379DEA100F6FD2C /* AboutReservationView.swift */; };
 		1F00C6D62379E9FA00F6FD2C /* RegisterReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00C6D52379E9FA00F6FD2C /* RegisterReservationView.swift */; };
+		1F9CBF1E23871968006CD005 /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CBF1D23871968006CD005 /* PersonListViewModel.swift */; };
+		1F9CBF2023871C2D006CD005 /* UserConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CBF1F23871C2D006CD005 /* UserConfig.swift */; };
+		1F9CBF2223871E5D006CD005 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CBF2123871E5D006CD005 /* User.swift */; };
+		1F9CBF2423872361006CD005 /* UserRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CBF2323872361006CD005 /* UserRegistrationView.swift */; };
+		1F9CBF26238724CA006CD005 /* DentistLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CBF25238724CA006CD005 /* DentistLogin.swift */; };
+		1F9CBF28238724E4006CD005 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CBF27238724E4006CD005 /* UserLogin.swift */; };
 		1FC3643C2376892400C53695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3643B2376892400C53695 /* AppDelegate.swift */; };
 		1FC3643E2376892400C53695 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3643D2376892400C53695 /* SceneDelegate.swift */; };
 		1FC364402376892400C53695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3643F2376892400C53695 /* ContentView.swift */; };
@@ -24,7 +30,7 @@
 		1FC364742376978A00C53695 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC364732376978A00C53695 /* Person.swift */; };
 		1FC3647623769E8200C53695 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3647523769E8200C53695 /* Reservation.swift */; };
 		1FC364782376A37500C53695 /* ReservationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC364772376A37500C53695 /* ReservationListViewModel.swift */; };
-		1FEFA3572376E6B900E6BF4B /* OnlineDentalClinicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicService.swift */; };
+		1FEFA3572376E6B900E6BF4B /* OnlineDentalClinicServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		1F00C6D12379C41300F6FD2C /* ReservationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsListView.swift; sourceTree = "<group>"; };
 		1F00C6D32379DEA100F6FD2C /* AboutReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutReservationView.swift; sourceTree = "<group>"; };
 		1F00C6D52379E9FA00F6FD2C /* RegisterReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReservationView.swift; sourceTree = "<group>"; };
+		1F9CBF1D23871968006CD005 /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
+		1F9CBF1F23871C2D006CD005 /* UserConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfig.swift; sourceTree = "<group>"; };
+		1F9CBF2123871E5D006CD005 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1F9CBF2323872361006CD005 /* UserRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationView.swift; sourceTree = "<group>"; };
+		1F9CBF25238724CA006CD005 /* DentistLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentistLogin.swift; sourceTree = "<group>"; };
+		1F9CBF27238724E4006CD005 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		1FC364382376892400C53695 /* OnlineOnlineDentalClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineOnlineDentalClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC3643B2376892400C53695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FC3643D2376892400C53695 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +80,7 @@
 		1FC364732376978A00C53695 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1FC3647523769E8200C53695 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
 		1FC364772376A37500C53695 /* ReservationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListViewModel.swift; sourceTree = "<group>"; };
-		1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineDentalClinicService.swift; sourceTree = "<group>"; };
+		1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineDentalClinicServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,9 @@
 				1F00C6D12379C41300F6FD2C /* ReservationsListView.swift */,
 				1F00C6D32379DEA100F6FD2C /* AboutReservationView.swift */,
 				1F00C6D52379E9FA00F6FD2C /* RegisterReservationView.swift */,
+				1F9CBF2323872361006CD005 /* UserRegistrationView.swift */,
+				1F9CBF25238724CA006CD005 /* DentistLogin.swift */,
+				1F9CBF27238724E4006CD005 /* UserLogin.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,7 +148,6 @@
 				1F00C6D02379C3E600F6FD2C /* Views */,
 				1FEFA3552376E68A00E6BF4B /* Services */,
 				1FC3647023768F3900C53695 /* Models */,
-				1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicService.swift */,
 				1FC3646B23768B0D00C53695 /* ViewModels */,
 				1FC3643B2376892400C53695 /* AppDelegate.swift */,
 				1FC3643D2376892400C53695 /* SceneDelegate.swift */,
@@ -177,6 +191,7 @@
 				1FC3646C23768B4100C53695 /* ReservationViewModel.swift */,
 				1FC3646E23768D8F00C53695 /* PersonViewModel.swift */,
 				1FC364772376A37500C53695 /* ReservationListViewModel.swift */,
+				1F9CBF1D23871968006CD005 /* PersonListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -187,6 +202,8 @@
 				1FC3647123768F5F00C53695 /* Role.swift */,
 				1FC364732376978A00C53695 /* Person.swift */,
 				1FC3647523769E8200C53695 /* Reservation.swift */,
+				1F9CBF1F23871C2D006CD005 /* UserConfig.swift */,
+				1F9CBF2123871E5D006CD005 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +211,7 @@
 		1FEFA3552376E68A00E6BF4B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1FEFA3562376E6B900E6BF4B /* OnlineDentalClinicServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -330,18 +348,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FC3646F23768D8F00C53695 /* PersonViewModel.swift in Sources */,
+				1F9CBF26238724CA006CD005 /* DentistLogin.swift in Sources */,
 				1F00C6D62379E9FA00F6FD2C /* RegisterReservationView.swift in Sources */,
+				1F9CBF2423872361006CD005 /* UserRegistrationView.swift in Sources */,
 				1FC3643C2376892400C53695 /* AppDelegate.swift in Sources */,
 				1FC3643E2376892400C53695 /* SceneDelegate.swift in Sources */,
+				1F9CBF2223871E5D006CD005 /* User.swift in Sources */,
 				1FC3646D23768B4100C53695 /* ReservationViewModel.swift in Sources */,
 				1FC364742376978A00C53695 /* Person.swift in Sources */,
 				1F00C6D42379DEA100F6FD2C /* AboutReservationView.swift in Sources */,
 				1FC364782376A37500C53695 /* ReservationListViewModel.swift in Sources */,
 				1FC364402376892400C53695 /* ContentView.swift in Sources */,
-				1FEFA3572376E6B900E6BF4B /* OnlineDentalClinicService.swift in Sources */,
+				1F9CBF1E23871968006CD005 /* PersonListViewModel.swift in Sources */,
+				1F9CBF2023871C2D006CD005 /* UserConfig.swift in Sources */,
+				1FEFA3572376E6B900E6BF4B /* OnlineDentalClinicServices.swift in Sources */,
 				1FC3647623769E8200C53695 /* Reservation.swift in Sources */,
 				1FC3647223768F5F00C53695 /* Role.swift in Sources */,
 				1F00C6D22379C41300F6FD2C /* ReservationsListView.swift in Sources */,
+				1F9CBF28238724E4006CD005 /* UserLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

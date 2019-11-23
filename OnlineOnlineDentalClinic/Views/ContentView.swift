@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
-  
+    @EnvironmentObject var userConfig : UserConfig
     
     var body: some View {
         NavigationView {
             VStack{
-            NavigationLink(destination: ReservationsListView()) { Text("Login Paciente") }
+            NavigationLink(destination: UserLogin()) { Text("Login Paciente") }
                 .scaledToFill()
                 .frame(minWidth: 100, idealWidth: 300, maxWidth: 350)
                 .border(Color.blue, width: 2)

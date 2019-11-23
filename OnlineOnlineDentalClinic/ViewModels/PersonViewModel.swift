@@ -10,7 +10,9 @@ import Foundation
 struct PersonViewModel: Identifiable {
     var person: Person
     
-    var id = UUID()
+    var id: Int{
+        return self.person.id
+    }
     
     var name: String {
         return self.person.name
@@ -20,7 +22,7 @@ struct PersonViewModel: Identifiable {
         return self.person.lastname
     }
     
-    var dni: String {
+    var dni: Int {
         return self.person.dni
     }
     
@@ -36,8 +38,12 @@ struct PersonViewModel: Identifiable {
         return self.person.picture
     }
     
-    var gender: String{
+    var gender: String {
         return self.person.gender
+    }
+    
+    var idRole: Int {
+        return self.person.idRole
     }
     
     init(person: Person) {
